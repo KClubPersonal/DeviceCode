@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35514.174 d17.12
+VisualStudioVersion = 17.12.35514.174
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceCode.API", "DeviceCode.API\DeviceCode.API.csproj", "{B5444C50-89D0-49A3-B5C5-93500F9B141F}"
 EndProject
@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceCode.Domain", "Device
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceCode.Application", "DeviceCode.Application\DeviceCode.Application.csproj", "{FD9C94EB-41BB-4BD1-9A4A-366C4F889701}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceManager.Infrastructure", "DeviceManager.Infrastructure\DeviceManager.Infrastructure.csproj", "{A9B16962-050B-42D0-81FF-FBAE11A77ECE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceCode.Infrastructure", "DeviceCode.Infrastructure\DeviceCode.Infrastructure.csproj", "{A9B16962-050B-42D0-81FF-FBAE11A77ECE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C87ED87C-9CDC-4D23-8C2D-08F5913400F8}"
 EndProject
