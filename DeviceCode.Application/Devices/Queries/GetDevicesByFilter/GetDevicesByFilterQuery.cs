@@ -1,4 +1,5 @@
-﻿using DeviceCode.Domain.Enums;
+﻿using DeviceCode.Application.Dtos;
+using DeviceCode.Domain.Enums;
 using MediatR;
 
 namespace DeviceCode.Application.Devices.Queries.GetDevicesByFilter;

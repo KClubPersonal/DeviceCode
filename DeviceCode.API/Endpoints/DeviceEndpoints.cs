@@ -18,9 +18,6 @@ public static class DeviceEndpoints
 {
     public static WebApplication MapDeviceEndpoints(this WebApplication app)
     {
-        // Adiciona um manipulador de exceções global para a nossa exceção customizada.
-        // Isso transforma DomainExceptions em respostas HTTP 400 (Bad Request),
-        // o que é mais apropriado que um erro 500 (Internal Server Error).
         app.UseExceptionHandler(exceptionHandlerApp =>
         {
             exceptionHandlerApp.Run(async context =>

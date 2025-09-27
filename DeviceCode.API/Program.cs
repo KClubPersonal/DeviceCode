@@ -34,3 +34,6 @@ app.UseHttpsRedirection();
 app.MapDeviceEndpoints();
 
 app.Run();
+
+// to be used by Tests.Integration
+public partial class Program { }

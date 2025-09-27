@@ -1,4 +1,5 @@
-﻿using DeviceCode.Application.Mappings;
+﻿using DeviceCode.Application.Dtos;
+using DeviceCode.Application.Mappings;
 using DeviceCode.Domain.Interfaces;
 using MediatR;
 

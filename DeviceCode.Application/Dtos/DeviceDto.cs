@@ -1,5 +1,8 @@
 ﻿using DeviceCode.Domain.Enums;
 
+namespace DeviceCode.Application.Dtos;
+
+
 /// <summary>
 /// DTO to be used from API to Application
 /// </summary>

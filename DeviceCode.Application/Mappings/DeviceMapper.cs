@@ -1,4 +1,5 @@
-﻿using DeviceCode.Domain.Entities;
+﻿using DeviceCode.Application.Dtos;
+using DeviceCode.Domain.Entities;
 
 namespace DeviceCode.Application.Mappings;
 public static class DeviceMapper
