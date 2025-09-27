@@ -1,0 +1,26 @@
+name: devicecode
+
+services:
+  devicecode.api:
+    image: ${DOCKER_REGISTRY-}devicecodeapi
+    container_name: DeviceCode.API
+    build:
+      context: .
+      dockerfile: DeviceCode.API/Dockerfile
+    ports:
+      - "8080:8080"
+      - "8081:8081"
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo:6.0
+    container_name: mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:

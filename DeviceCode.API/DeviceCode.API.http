@@ -1,6 +1,64 @@
-@DeviceCode.API_HostAddress = http://localhost:5072
+@host = https://localhost:8081
+@contentType = application/json
 
-GET {{DeviceCode.API_HostAddress}}/weatherforecast/
-Accept: application/json
+@manualDeviceId = 6faa6eec-757d-4844-a6dc-fca00060f54b
 
 ###
+# 1. New Device (iPhone 17)
+POST {{host}}/devices
+Content-Type: {{contentType}}
+
+{
+  "name": "iPhone 17",
+  "brand": "Apple"
+}
+
+
+###
+# 2. Search the Iphone 17
+GET {{host}}/devices/{{manualDeviceId}}
+
+###
+# 3. Get All
+GET {{host}}/devices
+
+###
+# 4. Get all by brand
+GET {{host}}/devices?brand=apple
+
+###
+# 5. Get all by state
+GET {{host}}/devices?state=Available
+
+###
+# 6. Update To "InUse"
+PUT {{host}}/devices/{{manualDeviceId}}
+Content-Type: {{contentType}}
+{
+  "name": "iPhone 17 Pro",
+  "brand": "Apple",
+  "state": "InUse"
+}
+
+###
+# 7. Try to Delete (error 400)
+DELETE {{host}}/devices/{{manualDeviceId}}
+
+###
+# 8. Back to "Available"
+PUT {{host}}/devices/{{manualDeviceId}}
+Content-Type: {{contentType}}
+
+{
+  "name": "iPhone 17 Pro",
+  "brand": "Apple",
+  "state": "Available"
+}
+
+###
+# 9. Delete ok
+DELETE {{host}}/devices/{{manualDeviceId}}
+
+###
+# 10. Check if is deleted (error 404)
+GET {{host}}/devices/{{manualDeviceId}}

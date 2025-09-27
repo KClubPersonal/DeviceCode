@@ -7,13 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Devices\Commands\CreateDevice\" />
-    <Folder Include="Devices\Commands\DeleteDevice\" />
-    <Folder Include="Devices\Commands\UpdateDevice\" />
-    <Folder Include="Devices\Queries\GetDeviceById\" />
-    <Folder Include="Devices\Queries\GetAllDevices\" />
-    <Folder Include="Devices\Queries\GetDevicesByFilter\" />
-    <Folder Include="Dtos\" />
+    <PackageReference Include="MediatR" Version="13.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DeviceCode.Domain\DeviceCode.Domain.csproj" />
   </ItemGroup>
 
 </Project>
