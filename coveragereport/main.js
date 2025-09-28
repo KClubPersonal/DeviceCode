@@ -210,9 +210,47 @@ for (i = 0, l = charts.length; i < l; i++) {
 }
 
 var assemblies = [
+  {
+    "name": "DeviceCode.API",
+    "classes": [
+      { "name": "DeviceCode.API.Endpoints.CreateDeviceRequest", "rp": "DeviceCode.API_CreateDeviceRequest.html", "cl": 1, "ucl": 0, "cal": 1, "tl": 78, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "DeviceCode.API.Endpoints.DeviceEndpoints", "rp": "DeviceCode.API_DeviceEndpoints.html", "cl": 38, "ucl": 8, "cal": 46, "tl": 78, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "DeviceCode.API.Endpoints.UpdateDeviceRequest", "rp": "DeviceCode.API_UpdateDeviceRequest.html", "cl": 1, "ucl": 0, "cal": 1, "tl": 78, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "Program", "rp": "DeviceCode.API_Program.html", "cl": 18, "ucl": 0, "cal": 18, "tl": 39, "cb": 2, "tb": 2, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+    ]},
+  {
+    "name": "DeviceCode.Application",
+    "classes": [
+      { "name": "DeviceCode.Application.DependencyInjection", "rp": "DeviceCode.Application_DependencyInjection.html", "cl": 5, "ucl": 0, "cal": 5, "tl": 14, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "DeviceCode.Application.Devices.Commands.CreateDevice.CreateDeviceCommand", "rp": "DeviceCode.Application_CreateDeviceCommand.html", "cl": 1, "ucl": 0, "cal": 1, "tl": 4, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "DeviceCode.Application.Devices.Commands.CreateDevice.CreateDeviceCommandHandler", "rp": "DeviceCode.Application_CreateDeviceCommandHandler.html", "cl": 6, "ucl": 0, "cal": 6, "tl": 17, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "DeviceCode.Application.Devices.Commands.DeleteDevice.DeleteDeviceCommand", "rp": "DeviceCode.Application_DeleteDeviceCommand.html", "cl": 1, "ucl": 0, "cal": 1, "tl": 4, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "DeviceCode.Application.Devices.Commands.DeleteDevice.DeleteDeviceCommandHandler", "rp": "DeviceCode.Application_DeleteDeviceCommandHandler.html", "cl": 9, "ucl": 2, "cal": 11, "tl": 27, "cb": 3, "tb": 4, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "DeviceCode.Application.Devices.Commands.UpdateDevice.UpdateDeviceCommand", "rp": "DeviceCode.Application_UpdateDeviceCommand.html", "cl": 1, "ucl": 0, "cal": 1, "tl": 5, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "DeviceCode.Application.Devices.Commands.UpdateDevice.UpdateDeviceCommandHandler", "rp": "DeviceCode.Application_UpdateDeviceCommandHandler.html", "cl": 7, "ucl": 0, "cal": 7, "tl": 21, "cb": 1, "tb": 2, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "DeviceCode.Application.Devices.Queries.GetDeviceById.GetDeviceByIdQuery", "rp": "DeviceCode.Application_GetDeviceByIdQuery.html", "cl": 1, "ucl": 0, "cal": 1, "tl": 5, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "DeviceCode.Application.Devices.Queries.GetDeviceById.GetDeviceByIdQueryHandler", "rp": "DeviceCode.Application_GetDeviceByIdQueryHandler.html", "cl": 5, "ucl": 0, "cal": 5, "tl": 16, "cb": 1, "tb": 2, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "DeviceCode.Application.Devices.Queries.GetDevicesByFilter.GetDevicesByFilterQuery", "rp": "DeviceCode.Application_GetDevicesByFilterQuery.html", "cl": 1, "ucl": 0, "cal": 1, "tl": 6, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "DeviceCode.Application.Devices.Queries.GetDevicesByFilter.GetDevicesByFilterQueryHandler", "rp": "DeviceCode.Application_GetDevicesByFilterQueryHandler.html", "cl": 12, "ucl": 3, "cal": 15, "tl": 30, "cb": 3, "tb": 4, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "DeviceCode.Application.Dtos.DeviceDto", "rp": "DeviceCode.Application_DeviceDto.html", "cl": 7, "ucl": 0, "cal": 7, "tl": 15, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "DeviceCode.Application.Mappings.DeviceMapper", "rp": "DeviceCode.Application_DeviceMapper.html", "cl": 9, "ucl": 0, "cal": 9, "tl": 17, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+    ]},
+  {
+    "name": "DeviceCode.Domain",
+    "classes": [
+      { "name": "DeviceCode.Domain.Entities.Device", "rp": "DeviceCode.Domain_Device.html", "cl": 31, "ucl": 4, "cal": 35, "tl": 99, "cb": 4, "tb": 6, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "DeviceCode.Domain.Exceptions.DomainException", "rp": "DeviceCode.Domain_DomainException.html", "cl": 1, "ucl": 0, "cal": 1, "tl": 7, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+    ]},
+  {
+    "name": "DeviceCode.Infrastructure",
+    "classes": [
+      { "name": "DeviceCode.Infrastructure.DependencyInjection", "rp": "DeviceCode.Infrastructure_DependencyInjection.html", "cl": 18, "ucl": 2, "cal": 20, "tl": 36, "cb": 1, "tb": 2, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "DeviceCode.Infrastructure.Persistence.MongoDb.Mappings.DeviceMap", "rp": "DeviceCode.Infrastructure_DeviceMap.html", "cl": 8, "ucl": 0, "cal": 8, "tl": 17, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "DeviceCode.Infrastructure.Persistence.MongoDb.Repositories.DeviceRepository", "rp": "DeviceCode.Infrastructure_DeviceRepository.html", "cl": 11, "ucl": 17, "cal": 28, "tl": 54, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+    ]},
 ];
 
-var metrics = [];
+var metrics = [{ "name": "Crap Score", "abbreviation": "crp", "explanationUrl": "https://googletesting.blogspot.de/2011/02/this-code-is-crap.html" }, { "name": "Cyclomatic complexity", "abbreviation": "cc", "explanationUrl": "https://en.wikipedia.org/wiki/Cyclomatic_complexity" }, { "name": "Line coverage", "abbreviation": "cov", "explanationUrl": "https://en.wikipedia.org/wiki/Code_coverage" }, { "name": "Branch coverage", "abbreviation": "bcov", "explanationUrl": "https://en.wikipedia.org/wiki/Code_coverage" }];
 
 var historicCoverageExecutionTimes = [];
 
